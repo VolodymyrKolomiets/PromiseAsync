@@ -49,7 +49,7 @@ button.addEventListener('click', consoleUsers);
 
 // Imprimir por consola la lista de razas de todos los perros.
 axios.get('https://dog.ceo/api/breeds/list/all')
-    .then((dogsList) => console.log(dogsList))
+    .then((dogsList) => console.log(dogsList.data.message))
     .catch((err) => console.error(err));
 
 // Imprimir por consola una imagen random de una raza.
